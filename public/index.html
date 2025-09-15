@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educational Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.development.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.development.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/babel-standalone@7.22.5/babel.min.js"></script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .chatbot-container { position: fixed; bottom: 20px; right: 20px; z-index: 1000; }
+    .quiz-modal { position: fixed; z-index: 1001; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); display: flex; align-items: center; justify-content: center; }
+    .quiz-content { background: white; padding: 20px; border-radius: 8px; max-width: 500px; width: 100%; }
+    .dark .quiz-content { background: #1f2937; color: white; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    const { useState, useEffect } = React;
+
+    // =================================================================================
+    //                            MASTER DATA OBJECT
+    // =================================================================================
+    const modulesData = {
+      // --- CLASS 9 DATA ---
+      physicsIX: [
+        { id: 1, title: 'Motion', summary: 'Understanding motion, distance, displacement, speed, velocity, and acceleration.', keyTopics: [], realWorldExample: '', keyEquation: 's = ut + ½at²', icon: 'atom', visualizationLinks: [], quiz: [{ question: 'What is the SI unit of acceleration?', options: ['m/s', 'm/s²', 'm', 's'], correct: 'm/s²' }] },
+        { id: 2, title: 'Force and Laws of Motion', summary: "Exploring Newton's laws of motion, inertia, and momentum.", keyTopics: [], realWorldExample: '', keyEquation: 'F = ma', icon: 'atom', quiz: [{ question: 'Inertia of an object depends on its:', options: ['Velocity', 'Mass', 'Acceleration', 'Shape'], correct: 'Mass' }] },
+      ],
+      chemistryIX: [
+        { id: 1, title: 'Matter in Our Surroundings', summary: 'Understanding the physical nature of matter and states of matter.', keyTopics: [], realWorldExample: '', keyEquation: '', icon: 'flask', quiz: [{ question: 'Which process describes the conversion of a solid directly into a gas?', options: ['Evaporation', 'Condensation', 'Sublimation', 'Melting'], correct: 'Sublimation' }] },
+        { id: 2, title: 'Is Matter Around Us Pure?', summary: 'Differentiating between pure substances and mixtures.', keyTopics: [], realWorldExample: '', keyEquation: '', icon: 'flask', quiz: [{ question: 'Which of the following is a pure substance?', options: ['Milk', 'Air', 'Iron', 'Soil'], correct: 'Iron' }] },
+      ],
+      biologyIX: [
+        { id: 1, title: 'The Fundamental Unit of Life', summary: 'A detailed study of the cell and its organelles.', keyTopics: [], realWorldExample: '', keyEquation: '', icon: 'dna', quiz: [{ question: 'Which organelle is known as the "powerhouse of the cell"?', options: ['Ribosome', 'Nucleus', 'Mitochondrion', 'Lysosome'], correct: 'Mitochondrion' }] },
+        { id: 2, title: 'Tissues', summary: 'Exploring the different types of plant and animal tissues.', keyTopics: [], realWorldExample: '', keyEquation: '', icon: 'dna', quiz: [{ question: 'Blood is a type of:', options: ['Epithelial Tissue', 'Muscular Tissue', 'Nervous Tissue', 'Connective Tissue'], correct: 'Connective Tissue' }] },
+      ],
+
+      // --- CLASS 11 DATA ---
+      chemistryXI: [
+        { id: 1, title: 'Some Basic Concepts of Chemistry', summary: 'Introduces fundamental concepts like atoms, molecules, mole concept, and stoichiometry.', keyTopics: [], realWorldExample: 'Baking a cake requires precise amounts of ingredients (stoichiometry).', keyEquation: 'Number of moles = Given mass / Molar mass', icon: 'flask', visualizationLinks: ['https://molview.org/', 'https://ptable.com/'], quiz: [{ question: 'What is the value of Avogadro\'s number?', options: ['6.022 x 10^23', '3.14 x 10^23'], correct: '6.022 x 10^23' }] },
+      ],
+      physicsXI: [
+        { id: 1, title: 'Units and Measurement', summary: 'Covers the international system of units, measurement techniques, and error analysis.', keyTopics: [], realWorldExample: 'GPS systems rely on extremely precise time measurements from atomic clocks.', keyEquation: 'Error (%) = (Δa / a_mean) * 100', icon: 'atom', visualizationLinks: ['https://phet.colorado.edu/en/simulations/ruler', 'https://www.npl.co.uk/si-units'], quiz: [{ question: 'What is the SI unit for electric current?', options: ['Volt', 'Ohm', 'Ampere', 'Watt'], correct: 'Ampere' }] },
+      ],
+      biologyXI: [
+        { id: 1, title: 'The Living World', summary: 'Introduces the concept of life, biodiversity, and the need for systematic classification.', keyTopics: [], realWorldExample: 'A museum or a botanical garden serves as a taxonomical aid.', keyEquation: '', icon: 'dna', visualizationLinks: ['https://www.britannica.com/science/taxonomy'], quiz: [{ question: 'Who is known as the father of modern taxonomy?', options: ['Aristotle', 'Carolus Linnaeus', 'Charles Darwin'], correct: 'Carolus Linnaeus' }] },
+      ],
+
+      // --- CLASS 12 DATA ---
+      chemistryXII: [
+        { id: 1, title: 'The Solid State', summary: 'Explores the structure and properties of crystalline and amorphous solids.', keyTopics: ['General Characteristics of Solid State', 'Amorphous and Crystalline Solids', 'Crystal Lattices and Unit Cells'], realWorldExample: 'Diamond\'s hardness is due to its tightly packed carbon atoms in a 3D crystal lattice.', keyEquation: 'Density = (Z * M) / (a^3 * N_A)', icon: 'flask', visualizationLinks: ['https://molview.org/?codid=1100025'], quiz: [{ question: 'What is the basic unit of a crystal lattice?', options: ['Molecule', 'Unit Cell', 'Atom'], correct: 'Unit Cell' }] },
+      ],
+      biologyXII: [
+        { id: 1, title: 'Sexual Reproduction in Flowering Plants', summary: 'Explores how flowering plants reproduce through pollination and fertilization.', keyTopics: ['Flower Structure', 'Pollination', 'Double Fertilization', 'Post-Fertilization Events'], realWorldExample: 'Hybrid corn production relies on controlled pollination to enhance yield.', keyEquation: '', icon: 'dna', visualizationLinks: ['https://www.visiblebody.com/learn/biology'], quiz: [{ question: 'Which part of the flower develops into fruit?', options: ['Ovary', 'Stigma', 'Anther'], correct: 'Ovary' }] },
+      ],
+      physicsXII: [
+        { id: 1, title: 'Electric Charges and Fields', summary: 'Introduces electric charges, forces, and fields.', keyTopics: ['Electric Charge', 'Coulombs Law', 'Electric Field', 'Gausss Law'], realWorldExample: 'Photocopiers use static electricity to attract toner particles.', keyEquation: 'F = k * q₁ * q₂ / r²', icon: 'atom', visualizationLinks: ['https://phet.colorado.edu/'], quiz: [{ question: 'What is the SI unit of electric charge?', options: ['Coulomb', 'Ampere', 'Volt'], correct: 'Coulomb' }] },
+      ]
+    };
+
+    // --- COMPONENTS ---
+
+    const Login = ({ onLogin }) => {
+      const [email, setEmail] = useState('');
+      const [password, setPassword] = useState('');
+      const [error, setError] = useState('');
+      const handleLogin = () => {
+        // In a real app, you'd check localStorage for existing profiles first
+        const existingProfile = localStorage.getItem(email);
+        if (existingProfile) {
+            onLogin(JSON.parse(existingProfile));
+        } else if (email && password) {
+            onLogin({ email }); // Treat as new user if not found
+        } else {
+            setError('Please fill in all fields');
+        }
+      };
+      return (
+        <div className="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-900">
+          <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-md">
+            <h2 className="text-2xl font-bold mb-6 text-center dark:text-white">Login</h2>
+            {error && <p className="text-red-500 mb-4">{error}</p>}
+            <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} className="w-full p-2 mb-4 border rounded dark:bg-gray-700 dark:text-white" />
+            <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} className="w-full p-2 mb-4 border rounded dark:bg-gray-700 dark:text-white" />
+            <button onClick={handleLogin} className="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700">Login</button>
+            <p className="mt-4 text-center dark:text-white">Don't have an account? <a href="#" onClick={() => onLogin(null, true)} className="text-blue-600">Sign Up</a></p>
+          </div>
+        </div>
+      );
+    };
+
+    const Signup = ({ onSignup }) => {
+      const [email, setEmail] = useState('');
+      const [password, setPassword] = useState('');
+      const [error, setError] = useState('');
+      const handleSignup = () => {
+        if (email && password) { onSignup({ email }); } else { setError('Please fill in all fields'); }
+      };
+      return (
+        <div className="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-900">
+          <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-md">
+            <h2 className="text-2xl font-bold mb-6 text-center dark:text-white">Sign Up</h2>
+            {error && <p className="text-red-500 mb-4">{error}</p>}
+            <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} className="w-full p-2 mb-4 border rounded dark:bg-gray-700 dark:text-white" />
+            <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} className="w-full p-2 mb-4 border rounded dark:bg-gray-700 dark:text-white" />
+            <button onClick={handleSignup} className="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700">Sign Up</button>
+            <p className="mt-4 text-center dark:text-white">Already have an account? <a href="#" onClick={() => onSignup(null, false)} className="text-blue-600">Login</a></p>
+          </div>
+        </div>
+      );
+    };
+
+    const StudentDetailsForm = ({ onSubmit }) => {
+      const [name, setName] = useState('');
+      const [standard, setStandard] = useState('');
+      const [subjects, setSubjects] = useState([]);
+      const [error, setError] = useState('');
+      const handleSubjectChange = (subject) => { setSubjects((prev) => prev.includes(subject) ? prev.filter((s) => s !== subject) : [...prev, subject]); };
+      const handleSubmit = () => { if (name && standard && subjects.length > 0) { onSubmit({ name, standard, subjects }); } else { setError('Please fill in all fields and select at least one subject'); } };
+      return (
+        <div className="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-900">
+          <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-lg w-full max-w-md">
+            <h2 className="text-2xl font-bold mb-6 text-center dark:text-white">Student Details</h2>
+            {error && <p className="text-red-500 mb-4">{error}</p>}
+            <input type="text" placeholder="Name" value={name} onChange={(e) => setName(e.target.value)} className="w-full p-2 mb-4 border rounded dark:bg-gray-700 dark:text-white" />
+            <select value={standard} onChange={(e) => setStandard(e.target.value)} className="w-full p-2 mb-4 border rounded dark:bg-gray-700 dark:text-white">
+              <option value="">Select Class</option>
+              <option value="IX">Class IX</option>
+              <option value="X">Class X</option>
+              <option value="XI">Class XI</option>
+              <option value="XII">Class XII</option>
+            </select>
+            <div className="mb-4">
+              <p className="dark:text-white">Select Subjects:</p>
+              {['Physics', 'Chemistry', 'Biology', 'Mathematics'].map((subject) => (<label key={subject} className="flex items-center dark:text-white"><input type="checkbox" checked={subjects.includes(subject)} onChange={() => handleSubjectChange(subject)} className="mr-2" />{subject}</label>))}
+            </div>
+            <button onClick={handleSubmit} className="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700">Submit</button>
+          </div>
+        </div>
+      );
+    };
+
+    const Chatbot = ({ darkMode }) => { /* ... Chatbot component code ... */ };
+    const QuizModal = ({ module, onClose }) => { /* ... QuizModal component code ... */ };
+
+    const Dashboard = ({ user, standard, subjects }) => {
+      const [darkMode, setDarkMode] = useState(false);
+      const [selectedSubject, setSelectedSubject] = useState(subjects[0] || 'Physics');
+      const [selectedModule, setSelectedModule] = useState(null);
+
+      // =====================================================================
+      //                            KEY CHANGE HERE
+      // =====================================================================
+      // Dynamically create the key to access the correct module data
+      // e.g., 'chemistryXI', 'physicsIX', 'biologyXII', etc.
+      const moduleKey = `${selectedSubject.toLowerCase()}${standard}`;
+      
+      // Look for the modules in the master data object
+      const modules = modulesData[moduleKey] || [];
+
+      return (
+        <div className={`min-h-screen ${darkMode ? 'dark bg-gray-900' : 'bg-gray-100'}`}>
+          <header className="bg-blue-600 text-white p-4 flex justify-between items-center">
+            <h1 className="text-2xl font-bold">Welcome, {user.name}</h1>
+            <div className="flex items-center">
+              <select value={selectedSubject} onChange={(e) => setSelectedSubject(e.target.value)} className="mr-4 p-2 rounded bg-white text-black">
+                {subjects.map((subject) => (<option key={subject} value={subject}>{subject}</option>))}
+              </select>
+              <button onClick={() => setDarkMode(!darkMode)} className="bg-gray-200 text-black p-2 rounded hover:bg-gray-300 dark:bg-gray-700 dark:text-white">
+                {darkMode ? 'Light Mode' : 'Dark Mode'}
+              </button>
+            </div>
+          </header>
+          <div className="container mx-auto p-4">
+            <h2 className="text-3xl font-bold mb-6 dark:text-white">Class {standard} {selectedSubject} Modules</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {modules.length === 0 ? (
+                <div className="col-span-full text-center p-4 bg-blue-100 dark:bg-blue-900/50 rounded-lg">
+                  <p className="text-blue-800 dark:text-blue-300">
+                    <span className="font-bold">ⓘ</span> No modules found for {selectedSubject} Class {standard}.
+                  </p>
+                </div>
+              ) : (
+                modules.map((module) => (
+                  <div key={module.id} className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300 flex flex-col">
+                    <h3 className="text-xl font-bold mb-2 dark:text-white">{module.title}</h3>
+                    <p className="text-gray-600 dark:text-gray-300 mb-4 flex-grow">{module.summary}</p>
+                    <div className="mt-auto">
+                        <button onClick={() => setSelectedModule(module)} className="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700">Take Quiz</button>
+                    </div>
+                  </div>
+                ))
+              )}
+            </div>
+          </div>
+          {selectedModule && (<QuizModal module={selectedModule} onClose={() => setSelectedModule(null)} />)}
+          <Chatbot darkMode={darkMode} />
+        </div>
+      );
+    };
+
+    const App = () => {
+      const [isLoggedIn, setIsLoggedIn] = useState(false);
+      const [isSignup, setIsSignup] = useState(false);
+      const [user, setUser] = useState(null);
+      const [showDetailsForm, setShowDetailsForm] = useState(false);
+      
+      // Simplify state, only need the full user profile
+      useEffect(() => {
+        // Check for a logged-in user in localStorage on initial load
+        const loggedInUser = localStorage.getItem('loggedInUser');
+        if (loggedInUser) {
+          setUser(JSON.parse(loggedInUser));
+          setIsLoggedIn(true);
+        }
+      }, []);
+
+      const handleLogin = (userData, signup = false) => {
+        if (signup) {
+          setIsSignup(true);
+        } else if (userData) {
+          const profileFromStorage = localStorage.getItem(userData.email);
+          if (profileFromStorage) {
+            const fullProfile = JSON.parse(profileFromStorage);
+            setUser(fullProfile);
+            localStorage.setItem('loggedInUser', JSON.stringify(fullProfile));
+            setIsLoggedIn(true);
+            setShowDetailsForm(false);
+          } else {
+            setUser(userData);
+            setShowDetailsForm(true); // New user, needs to fill details
+            setIsLoggedIn(true);
+          }
+        } else {
+          setIsSignup(false);
+        }
+      };
+
+      const handleSignup = (userData, login = false) => {
+        if (login) {
+          setIsSignup(false);
+        } else if (userData) {
+          setUser(userData);
+          setShowDetailsForm(true); // New user, needs to fill details
+          setIsLoggedIn(true);
+        }
+      };
+
+      const handleDetailsSubmit = (details) => {
+        const fullProfile = { ...user, ...details };
+        setUser(fullProfile);
+        setShowDetailsForm(false);
+        // Save profile to localStorage for persistence
+        localStorage.setItem(user.email, JSON.stringify(fullProfile));
+        localStorage.setItem('loggedInUser', JSON.stringify(fullProfile));
+      };
+      
+      return (
+        <>
+          {!isLoggedIn ? (
+            isSignup ? (
+              <Signup onSignup={handleSignup} />
+            ) : (
+              <Login onLogin={handleLogin} />
+            )
+          ) : showDetailsForm ? (
+            <StudentDetailsForm onSubmit={handleDetailsSubmit} />
+          ) : (
+            <Dashboard user={user} standard={user.standard} subjects={user.subjects} />
+          )}
+        </>
+      );
+    };
+
+    ReactDOM.render(<App />, document.getElementById('root'));
+  </script>
+</body>
+</html>

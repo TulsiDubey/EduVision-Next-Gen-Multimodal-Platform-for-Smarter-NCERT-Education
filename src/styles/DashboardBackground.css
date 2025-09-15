@@ -1,0 +1,16 @@
+.dashboard-background {
+  min-height: 100vh;
+  width: 100vw;
+  background: url('C:\Users\astha\EduSimpliAI-1 - Copy\EduSimpliAI-1 - Copy\src\login_bg.png') no-repeat center center fixed;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.25;
+}
+
+.dashboard-background > * {
+  position: relative;
+  z-index: 1;
+} 
