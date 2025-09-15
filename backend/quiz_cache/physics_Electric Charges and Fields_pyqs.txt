@@ -1,0 +1,23 @@
+1. Question:  Two point charges, q1 = +5.0 µC and q2 = -3.0 µC, are separated by a distance of 4.0 cm.  Calculate the magnitude of the electrostatic force between them. (k = 9.0 x 10⁹ Nm²/C²)
+
+Answer:  The magnitude of the electrostatic force is given by Coulomb's Law: F = k|q1q2|/r².  Plugging in the values, we get F = (9.0 x 10⁹ Nm²/C²)(5.0 x 10⁻⁶ C)(3.0 x 10⁻⁶ C) / (0.04 m)² = 84.375 N.  The magnitude of the force is approximately 84 N.
+
+
+2. Question: Describe the difference between electric field strength and electric potential.
+
+Answer: Electric field strength is a vector quantity representing the force per unit positive charge at a point in an electric field.  Electric potential is a scalar quantity representing the electric potential energy per unit positive charge at a point in an electric field.  Field strength indicates the force experienced by a charge, while potential indicates the potential energy the charge would possess at that point.
+
+
+3. Question: A small sphere carrying a charge of +8.0 µC is placed in a uniform electric field of strength 5.0 x 10⁴ N/C. Calculate the magnitude of the electric force acting on the sphere.
+
+Answer: The electric force on a charge in a uniform electric field is given by F = qE.  Therefore, F = (8.0 x 10⁻⁶ C)(5.0 x 10⁴ N/C) = 0.4 N.
+
+
+4. Question: Sketch the electric field lines for a positive point charge and a negative point charge, separately.  Explain the direction of the field lines.
+
+Answer:  For a positive point charge, the field lines radiate outwards in all directions. For a negative point charge, the field lines converge inwards from all directions. The direction of the field lines indicates the direction of the force on a positive test charge placed in the field.
+
+
+5. Question:  Explain the concept of electric shielding and give an example of its application.
+
+Answer: Electric shielding is the phenomenon where a conductor placed in an electric field redistributes its charges in such a way that the electric field inside the conductor becomes zero.  This happens because the free charges in the conductor move to cancel out the external field.  An example is a Faraday cage, used to protect sensitive electronic equipment from external electromagnetic interference.

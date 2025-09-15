@@ -1,0 +1,30 @@
+The high school chemistry module on "Haloalkanes and Haloarenes" focuses on a family of organic compounds containing halogen atoms (fluorine, chlorine, bromine, or iodine) bonded to either an alkane (a hydrocarbon with only single bonds) or an arene (a hydrocarbon with a benzene ring).  Think of it as adding a halogen "salt" to a hydrocarbon.
+
+**Key Concepts:**
+
+* **Haloalkanes (Alkyl Halides):** These are hydrocarbons where one or more hydrogen atoms are replaced by halogen atoms.  They're named by indicating the halogen and its position on the alkane chain.  For example, chloromethane (CH₃Cl) is methane with one hydrogen replaced by chlorine.  Their properties depend on the size of the alkyl group and the type of halogen.
+
+* **Haloarenes (Aryl Halides):**  These are similar but the halogen is attached to a benzene ring.  Chlorobenzene (C₆H₅Cl) is a common example.  The bond between the halogen and the benzene ring is stronger than in haloalkanes, making them less reactive.
+
+* **Nomenclature:**  Naming these compounds involves identifying the parent alkane or arene, numbering the carbon atoms, and indicating the position and type of halogen atom(s).  IUPAC nomenclature is used for systematic naming.
+
+* **Preparation:** Haloalkanes are often made by reacting alkanes with halogens in the presence of UV light (free radical substitution).  Haloarenes are typically synthesized through electrophilic aromatic substitution reactions.
+
+* **Physical Properties:** Generally, haloalkanes are liquids or gases at room temperature, with boiling points increasing with the size of the alkyl group and the atomic weight of the halogen. Haloarenes are usually liquids with higher boiling points than similar haloalkanes due to stronger intermolecular forces.  Their solubility in water is generally low.
+
+* **Chemical Properties:**  Haloalkanes undergo various reactions including nucleophilic substitution (where a nucleophile replaces the halogen) and elimination reactions (where a hydrogen and halogen are removed to form an alkene).  Haloarenes are less reactive due to the strong carbon-halogen bond in the benzene ring, though they can undergo some reactions under specific conditions.
+
+**Real-World Relevance:**
+
+* **Refrigerants:**  Certain haloalkanes (CFCs - Chlorofluorocarbons) were historically used as refrigerants, but they damage the ozone layer, leading to their phase-out.  Modern refrigerants are designed to be ozone-friendly.
+
+* **Pesticides and Insecticides:** Many insecticides and pesticides contain haloalkanes and haloarenes.  However, concerns about their environmental impact and toxicity are increasing, leading to the development of more sustainable alternatives.
+
+* **Solvents:** Some haloalkanes are used as solvents in various industrial processes, though their use is decreasing due to environmental and health concerns.
+
+* **Polymers:** Some haloalkanes are used in the synthesis of polymers.
+
+* **Medical Applications:** Certain haloalkanes and haloarenes are used in medicine as anaesthetics and disinfectants.
+
+
+In essence, this module teaches you about a significant class of organic compounds, their properties, how they're made, and their practical applications and environmental impact. Understanding this module provides a strong foundation for further studies in organic chemistry.

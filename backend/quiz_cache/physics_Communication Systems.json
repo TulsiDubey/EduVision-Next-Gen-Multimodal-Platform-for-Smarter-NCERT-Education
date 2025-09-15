@@ -1,0 +1,102 @@
+[
+  {
+    "question": "Which of the following is NOT a type of communication channel?",
+    "options": [
+      "Wired",
+      "Wireless",
+      "Optical fiber",
+      "Quantum entanglement"
+    ],
+    "correct": "Quantum entanglement"
+  },
+  {
+    "question": "What does AM stand for in radio communication?",
+    "options": [
+      "Amplitude Modulation",
+      "Analog Modulation",
+      "Audio Modulation",
+      "Antenna Modulation"
+    ],
+    "correct": "Amplitude Modulation"
+  },
+  {
+    "question": "FM radio broadcasts utilize which type of modulation?",
+    "options": [
+      "Amplitude Modulation",
+      "Frequency Modulation",
+      "Pulse Code Modulation",
+      "Phase Modulation"
+    ],
+    "correct": "Frequency Modulation"
+  },
+  {
+    "question": "The process of converting an analog signal into a digital signal is called:",
+    "options": [
+      "Modulation",
+      "Demodulation",
+      "Quantization",
+      "Analog-to-Digital Conversion (ADC)"
+    ],
+    "correct": "Analog-to-Digital Conversion (ADC)"
+  },
+  {
+    "question": "Which of the following is a measure of signal strength?",
+    "options": [
+      "Bandwidth",
+      "Frequency",
+      "Amplitude",
+      "Wavelength"
+    ],
+    "correct": "Amplitude"
+  },
+  {
+    "question": "What is the purpose of a repeater in a communication system?",
+    "options": [
+      "To amplify and retransmit signals",
+      "To convert analog signals to digital signals",
+      "To encode the transmitted message",
+      "To filter out unwanted frequencies"
+    ],
+    "correct": "To amplify and retransmit signals"
+  },
+  {
+    "question": "Which type of multiplexing allows multiple users to share a single channel by dividing the signal into different time slots?",
+    "options": [
+      "Frequency Division Multiplexing (FDM)",
+      "Time Division Multiplexing (TDM)",
+      "Wavelength Division Multiplexing (WDM)",
+      "Code Division Multiplexing (CDM)"
+    ],
+    "correct": "Time Division Multiplexing (TDM)"
+  },
+  {
+    "question": "In a digital communication system, what does bit rate refer to?",
+    "options": [
+      "The number of bits transmitted per second",
+      "The number of symbols transmitted per second",
+      "The frequency of the carrier wave",
+      "The amplitude of the signal"
+    ],
+    "correct": "The number of bits transmitted per second"
+  },
+  {
+    "question": "What is the main advantage of fiber optic communication over traditional copper wire communication?",
+    "options": [
+      "Higher bandwidth",
+      "Lower cost",
+      "Easier installation",
+      "Less susceptible to electromagnetic interference"
+    ],
+    "correct": "Higher bandwidth"
+  },
+  {
+    "question": "Which of the following is a common method used for error detection in digital communication?",
+    "options": [
+      "Frequency modulation",
+      "Amplitude modulation",
+      "Parity check",
+      "Pulse code modulation"
+    ],
+    "correct": "Parity check"
+  }
+]

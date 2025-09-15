@@ -1,0 +1,23 @@
+1. Question:  What is the difference between a saturated, unsaturated, and supersaturated solution?
+
+Answer: A saturated solution contains the maximum amount of solute that can be dissolved in a given amount of solvent at a specific temperature and pressure. An unsaturated solution contains less solute than it can dissolve at that temperature and pressure. A supersaturated solution contains more solute than it can normally dissolve at that temperature and pressure; it is unstable and often precipitates out excess solute.
+
+
+2. Question:  Explain the effect of temperature on the solubility of most solids and gases in water.
+
+Answer: The solubility of most solids in water increases with increasing temperature.  This is because higher temperatures provide more kinetic energy to the solvent molecules, allowing them to more effectively break apart and surround the solute particles. The solubility of most gases in water, however, decreases with increasing temperature.  This is because higher temperatures increase the kinetic energy of the gas molecules, allowing them to escape the liquid phase more easily.
+
+
+3. Question:  Calculate the molarity of a solution prepared by dissolving 15.0 g of NaCl (molar mass = 58.44 g/mol) in enough water to make 250.0 mL of solution.
+
+Answer:  First, convert grams of NaCl to moles:  (15.0 g) / (58.44 g/mol) = 0.256 moles NaCl.  Then, convert mL to L: 250.0 mL = 0.2500 L.  Finally, calculate molarity: (0.256 moles) / (0.2500 L) = 1.02 M
+
+
+4. Question:  What is the difference between molarity and molality?
+
+Answer: Molarity (M) is the number of moles of solute per liter of solution. Molality (m) is the number of moles of solute per kilogram of solvent.  Molarity is dependent on temperature (because volume changes with temperature), while molality is not (mass is less affected by temperature).
+
+
+5. Question: Describe how you would prepare 500 mL of a 0.10 M solution of potassium permanganate (KMnO4).
+
+Answer: First, calculate the required mass of KMnO4.  The molar mass of KMnO4 is approximately 158.03 g/mol.  Moles needed = 0.10 mol/L * 0.500 L = 0.050 moles.  Mass needed = 0.050 moles * 158.03 g/mol = 7.90 g.  To prepare the solution, weigh out 7.90 g of KMnO4 and carefully add it to a 500 mL volumetric flask. Add a small amount of distilled water to dissolve the KMnO4, then fill the flask to the 500 mL mark with distilled water.  Stopper and invert several times to ensure thorough mixing.

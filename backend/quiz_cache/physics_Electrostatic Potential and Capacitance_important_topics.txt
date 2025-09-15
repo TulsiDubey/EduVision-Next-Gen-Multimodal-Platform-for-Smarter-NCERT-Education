@@ -1,0 +1,21 @@
+* **Electric Potential:**
+    * What is electric potential? (voltage)
+    * Potential difference and its relationship to electric field.
+    * Calculating potential due to point charges and charge distributions.
+    * Equipotential surfaces.
+    * Potential energy of a charge in an electric field.
+    * Potential difference and work done.
+
+* **Capacitance:**
+    * What is a capacitor?  How does it store charge?
+    * Capacitance: Definition and units (Farads).
+    * Calculating capacitance for parallel plate, cylindrical, and spherical capacitors.
+    * Factors affecting capacitance.
+    * Dielectrics and their effect on capacitance.
+    * Energy stored in a capacitor.
+    * Capacitor combinations (series and parallel).
+
+
+* **Applications:**
+    * Real-world examples of capacitors (electronics, energy storage).
+    * Simple circuits involving capacitors.

@@ -1,0 +1,29 @@
+* **Electric Current:**
+    * What is electric current? (flow of charge)
+    * Measuring current (amperes, ammeters)
+    * Direct Current (DC) vs. Alternating Current (AC)
+* **Electric Circuits:**
+    * Circuit diagrams and symbols
+    * Series circuits (current, voltage, resistance)
+    * Parallel circuits (current, voltage, resistance)
+    * Combination circuits (series and parallel together)
+* **Ohm's Law:**
+    * Understanding Ohm's Law (V=IR)
+    * Calculating voltage, current, and resistance
+    * Identifying Ohmic and non-Ohmic materials
+* **Resistance:**
+    * Factors affecting resistance (length, area, material, temperature)
+    * Resistors in circuits (types and uses)
+    * Calculating total resistance in series and parallel circuits
+* **Electrical Power and Energy:**
+    * Calculating electrical power (P=IV, P=I²R, P=V²/R)
+    * Calculating electrical energy (E=Pt)
+    * Understanding kilowatt-hours (kWh) and electricity bills
+* **Electric Potential and Potential Difference:**
+    * Understanding voltage as potential difference
+    * How batteries create potential difference
+    * Relating voltage to energy and charge
+* **Kirchhoff's Laws:**
+    * Kirchhoff's Current Law (KCL) - conservation of charge
+    * Kirchhoff's Voltage Law (KVL) - conservation of energy
+    * Applying Kirchhoff's laws to complex circuits

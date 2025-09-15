@@ -1,0 +1,102 @@
+[
+  {
+    "question": "What is the strong nuclear force responsible for?",
+    "options": [
+      "Holding electrons in orbit around the nucleus",
+      "Holding protons and neutrons together in the nucleus",
+      "The decay of radioactive isotopes",
+      "The electromagnetic interaction between charged particles"
+    ],
+    "correct": "Holding protons and neutrons together in the nucleus"
+  },
+  {
+    "question": "What is the approximate radius of a nucleus (in femtometers)?",
+    "options": [
+      "10⁻¹⁵ m",
+      "10⁻¹⁰ m",
+      "10⁻⁶ m",
+      "10⁻² m"
+    ],
+    "correct": "10⁻¹⁵ m"
+  },
+  {
+    "question": "What is an isotope?",
+    "options": [
+      "An atom with the same number of protons but a different number of electrons",
+      "An atom with the same number of neutrons but a different number of protons",
+      "An atom with the same number of protons but a different number of neutrons",
+      "An atom with a different number of protons and neutrons"
+    ],
+    "correct": "An atom with the same number of protons but a different number of neutrons"
+  },
+  {
+    "question": "Which of the following is NOT a type of radioactive decay?",
+    "options": [
+      "Alpha decay",
+      "Beta decay",
+      "Gamma decay",
+      "Neutron decay"
+    ],
+    "correct": "Neutron decay"
+  },
+  {
+    "question": "What particle is emitted during alpha decay?",
+    "options": [
+      "Electron",
+      "Positron",
+      "Helium nucleus",
+      "Neutron"
+    ],
+    "correct": "Helium nucleus"
+  },
+  {
+    "question": "What is the process of splitting a heavy nucleus into lighter nuclei called?",
+    "options": [
+      "Nuclear fusion",
+      "Nuclear fission",
+      "Radioactive decay",
+      "Nuclear transmutation"
+    ],
+    "correct": "Nuclear fission"
+  },
+  {
+    "question": "What is the process of combining lighter nuclei to form a heavier nucleus called?",
+    "options": [
+      "Nuclear fusion",
+      "Nuclear fission",
+      "Radioactive decay",
+      "Nuclear transmutation"
+    ],
+    "correct": "Nuclear fusion"
+  },
+  {
+    "question": "What is the binding energy of a nucleus?",
+    "options": [
+      "The energy required to assemble the nucleus from its constituent nucleons",
+      "The energy released when the nucleus undergoes fission",
+      "The energy released when the nucleus undergoes fusion",
+      "The energy required to overcome the strong nuclear force"
+    ],
+    "correct": "The energy required to assemble the nucleus from its constituent nucleons"
+  },
+  {
+    "question": "What is the unit of radioactivity?",
+    "options": [
+      "Joule",
+      "Becquerel",
+      "Gray",
+      "Sievert"
+    ],
+    "correct": "Becquerel"
+  },
+  {
+    "question": "What does the half-life of a radioactive isotope represent?",
+    "options": [
+      "The time it takes for all the nuclei to decay",
+      "The time it takes for half of the nuclei to decay",
+      "The time it takes for the radioactivity to double",
+      "The time it takes for the radioactivity to reach zero"
+    ],
+    "correct": "The time it takes for half of the nuclei to decay"
+  }
+]

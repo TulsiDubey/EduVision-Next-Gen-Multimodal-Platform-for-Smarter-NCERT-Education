@@ -1,0 +1,31 @@
+* Electric Charge:
+    * Types of charge (positive and negative)
+    * Conservation of charge
+    * Quantization of charge
+    * Charging objects (friction, conduction, induction)
+
+* Coulomb's Law:
+    * Calculating electric force between point charges
+    * Understanding the inverse square law
+    * Superposition principle (adding forces from multiple charges)
+
+* Electric Fields:
+    * Definition and concept of electric field
+    * Drawing electric field lines
+    * Electric field strength (magnitude and direction)
+    * Calculating electric field due to point charges and charge distributions
+
+* Electric Potential Energy and Potential:
+    * Electric potential energy (work done moving a charge)
+    * Electric potential (voltage)
+    * Potential difference and its relation to work
+    * Equipotential surfaces
+
+* Conductors and Insulators:
+    * Difference between conductors and insulators
+    * Charge distribution in conductors
+    * Shielding
+
+* Applications:
+    * Examples of electric fields in everyday life (lightning, etc.)
+    * Simple applications of Coulomb's law

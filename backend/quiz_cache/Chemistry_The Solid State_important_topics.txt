@@ -1,0 +1,29 @@
+* **Crystalline Solids:**
+    * **Unit Cells:**  Types (primitive cubic, body-centered cubic, face-centered cubic), calculation of density, number of atoms per unit cell.
+    * **Bravais Lattices:**  Seven crystal systems, 14 Bravais lattices.
+    * **Crystallography:**  Miller indices, X-ray diffraction (Bragg's law).
+    * **Packing Efficiency:**  Close-packed structures (ccp, hcp), voids (tetrahedral, octahedral).
+    * **Isomorphism and Polymorphism:**  Definitions and examples.
+
+* **Amorphous Solids:**
+    * **Definition and Characteristics:**  Distinction from crystalline solids.
+    * **Examples:**  Glass, rubber.
+
+* **Band Theory of Solids:**
+    * **Energy Bands and Band Gaps:** Conductors, insulators, and semiconductors.
+    * **Semiconductors:**  Intrinsic and extrinsic (n-type and p-type) semiconductors, doping.
+
+* **Defects in Solids:**
+    * **Point Defects:**  Vacancies, interstitial atoms, substitutional impurities.
+    * **Line Defects:**  Dislocations.
+    * **Plane Defects:** Grain boundaries, stacking faults.
+    * **Consequences of Defects:** Influence on physical properties (e.g., strength, conductivity).
+
+* **Properties of Solids:**
+    * **Mechanical Properties:**  Hardness, elasticity, malleability, ductility.
+    * **Electrical Properties:**  Conductivity, band theory relationship.
+    * **Magnetic Properties:**  Diamagnetism, paramagnetism, ferromagnetism, antiferromagnetism, ferrimagnetism.
+    * **Thermal Properties:**  Heat capacity, thermal expansion.
+
+
+This list prioritizes core concepts. The depth of study within each subtopic will depend on the specific syllabus and learning objectives of the module.

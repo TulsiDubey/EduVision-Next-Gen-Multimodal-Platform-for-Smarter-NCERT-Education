@@ -1,0 +1,102 @@
+[
+  {
+    "question": "Which of the following is NOT an electromagnetic wave?",
+    "options": [
+      "Radio waves",
+      "Microwaves",
+      "Sound waves",
+      "X-rays"
+    ],
+    "correct": "Sound waves"
+  },
+  {
+    "question": "What is the speed of light in a vacuum?",
+    "options": [
+      "343 m/s",
+      "3 x 10^8 m/s",
+      "3 x 10^6 m/s",
+      "3 x 10^4 m/s"
+    ],
+    "correct": "3 x 10^8 m/s"
+  },
+  {
+    "question": "Electromagnetic waves are transverse waves. What does this mean?",
+    "options": [
+      "The waves travel in a straight line.",
+      "The wave oscillations are parallel to the direction of propagation.",
+      "The wave oscillations are perpendicular to the direction of propagation.",
+      "The waves require a medium to travel."
+    ],
+    "correct": "The wave oscillations are perpendicular to the direction of propagation."
+  },
+  {
+    "question": "Which of the following has the longest wavelength?",
+    "options": [
+      "Gamma rays",
+      "Visible light",
+      "Infrared radiation",
+      "Radio waves"
+    ],
+    "correct": "Radio waves"
+  },
+  {
+    "question": "Which electromagnetic wave has the highest frequency?",
+    "options": [
+      "Infrared radiation",
+      "Ultraviolet radiation",
+      "Microwaves",
+      "Gamma rays"
+    ],
+    "correct": "Gamma rays"
+  },
+  {
+    "question": "The electromagnetic spectrum is arranged in order of:",
+    "options": [
+      "Amplitude",
+      "Wavelength",
+      "Frequency",
+      "Both wavelength and frequency"
+    ],
+    "correct": "Both wavelength and frequency"
+  },
+  {
+    "question": "What phenomenon demonstrates the wave nature of light?",
+    "options": [
+      "Reflection",
+      "Refraction",
+      "Diffraction",
+      "All of the above"
+    ],
+    "correct": "All of the above"
+  },
+  {
+    "question": "Polarization is a property associated with which characteristic of electromagnetic waves?",
+    "options": [
+      "Speed",
+      "Frequency",
+      "Wavelength",
+      "Transverse nature"
+    ],
+    "correct": "Transverse nature"
+  },
+  {
+    "question": "What is the relationship between the frequency (f) and the wavelength (λ) of an electromagnetic wave, where c is the speed of light?",
+    "options": [
+      "f = cλ",
+      "c = f/λ",
+      "f = c/λ",
+      "λ = cf"
+    ],
+    "correct": "f = c/λ"
+  },
+  {
+    "question": "Which part of the electromagnetic spectrum is used in medical imaging?",
+    "options": [
+      "Radio waves",
+      "Microwaves",
+      "X-rays",
+      "Infrared radiation"
+    ],
+    "correct": "X-rays"
+  }
+]

@@ -1,0 +1,39 @@
+Here are 5 previous year exam questions (simulated) relevant to a "The Solid State" chemistry module, along with their answers.  Note that these are examples and may not perfectly reflect the style of any specific university's exam.
+
+**1. Question:** Describe the differences between ionic, covalent, metallic, and molecular solids in terms of their bonding, structure, and properties.  Give one example of each.
+
+**Answer:**
+
+* **Ionic Solids:**  Bonded by electrostatic attraction between oppositely charged ions.  They have a regular, crystalline structure arranged in a lattice.  Properties include high melting points, brittleness, and conductivity only when molten or dissolved. Example: NaCl (sodium chloride).
+
+* **Covalent Solids:** Bonded by strong covalent bonds forming a giant three-dimensional network.  They have high melting points, are hard and brittle, and are generally poor conductors of electricity. Example: Diamond (carbon).
+
+* **Metallic Solids:** Bonded by metallic bonds, where valence electrons are delocalized throughout a lattice of metal cations.  They have variable melting points, are malleable and ductile, and are excellent conductors of heat and electricity. Example: Copper (Cu).
+
+* **Molecular Solids:** Bonded by weak intermolecular forces (van der Waals forces, hydrogen bonds, etc.) between individual molecules. They have low melting points, are soft, and are generally poor conductors of electricity. Example: Ice (H₂O).
+
+
+**2. Question:** Explain the concept of a unit cell and its importance in crystallography.  Name the three common cubic unit cell types.
+
+**Answer:** A unit cell is the smallest repeating unit in a crystal lattice. It represents the fundamental building block that, when repeated in three dimensions, generates the entire crystal structure.  Its importance lies in determining the crystal's overall structure, symmetry, and properties, as well as calculating various parameters like density and atomic radii. The three common cubic unit cell types are simple cubic (primitive cubic), body-centered cubic (bcc), and face-centered cubic (fcc).
+
+
+**3. Question:**  Calculate the number of atoms in a face-centered cubic (FCC) unit cell.  Show your working.
+
+**Answer:**  In an FCC unit cell:
+* There are 8 corner atoms, each shared by 8 unit cells (contributing 1/8 atom per unit cell).
+* There are 6 face-centered atoms, each shared by 2 unit cells (contributing 1/2 atom per unit cell).
+Total number of atoms = (8 corner atoms × 1/8) + (6 face-centered atoms × 1/2) = 1 + 3 = 4 atoms.
+
+
+**4. Question:** What are Bragg's Law and its applications in determining crystal structure?
+
+**Answer:** Bragg's Law describes the condition for constructive interference of X-rays diffracted by crystal planes. It states: nλ = 2d sinθ, where n is an integer (order of reflection), λ is the wavelength of the X-rays, d is the interplanar spacing, and θ is the angle of incidence.  Applications include determining the crystal structure (lattice type, unit cell dimensions, and atomic positions) of crystalline materials using X-ray diffraction techniques.
+
+
+**5. Question:**  Explain the concept of a crystal defect and give two examples of point defects.
+
+**Answer:** Crystal defects are irregularities or imperfections in the otherwise perfectly ordered arrangement of atoms or ions in a crystal lattice. They significantly influence the material's physical and chemical properties. Two examples of point defects are:
+
+* **Vacancy:** A missing atom or ion from its regular lattice site.
+* **Interstitial:** An extra atom or ion occupying a space between the regular lattice sites.  (Substitutional defects, where an atom of a different type occupies a lattice site, are another important type.)

@@ -1,0 +1,102 @@
+[
+  {
+    "question": "Which of the following is NOT a characteristic of a solution?",
+    "options": [
+      "Homogeneous mixture",
+      "Particles are evenly distributed",
+      "Can be separated by filtration",
+      "Has a variable composition"
+    ],
+    "correct": "Can be separated by filtration"
+  },
+  {
+    "question": "What is the solute in a saltwater solution?",
+    "options": [
+      "Water",
+      "Salt",
+      "Air",
+      "Sand"
+    ],
+    "correct": "Salt"
+  },
+  {
+    "question": "What is the solvent in a solution of ethanol and water, where water is in larger quantity?",
+    "options": [
+      "Ethanol",
+      "Water",
+      "Both equally",
+      "Neither"
+    ],
+    "correct": "Water"
+  },
+  {
+    "question": "A solution with a high concentration of solute is described as:",
+    "options": [
+      "Dilute",
+      "Concentrated",
+      "Saturated",
+      "Unsaturated"
+    ],
+    "correct": "Concentrated"
+  },
+  {
+    "question": "What happens when a saturated solution is cooled?",
+    "options": [
+      "More solute dissolves",
+      "The solution becomes unsaturated",
+      "Some solute precipitates out",
+      "No change occurs"
+    ],
+    "correct": "Some solute precipitates out"
+  },
+  {
+    "question": "Which of the following factors affects the solubility of a solid in a liquid?",
+    "options": [
+      "Temperature",
+      "Pressure",
+      "Surface area of the solid",
+      "All of the above"
+    ],
+    "correct": "All of the above"
+  },
+  {
+    "question": "What is molarity?",
+    "options": [
+      "Mass of solute per liter of solution",
+      "Moles of solute per liter of solution",
+      "Grams of solute per 100g of solvent",
+      "Liters of solution per mole of solute"
+    ],
+    "correct": "Moles of solute per liter of solution"
+  },
+  {
+    "question": "A solution with a pH of 3 is:",
+    "options": [
+      "Neutral",
+      "Basic",
+      "Acidic",
+      "Amphoteric"
+    ],
+    "correct": "Acidic"
+  },
+  {
+    "question": "What is the process of adding more solvent to a solution called?",
+    "options": [
+      "Saturation",
+      "Dilution",
+      "Concentration",
+      "Precipitation"
+    ],
+    "correct": "Dilution"
+  },
+  {
+    "question": "Which of these is an example of a non-polar solvent?",
+    "options": [
+      "Water",
+      "Ethanol",
+      "Hexane",
+      "Acetone"
+    ],
+    "correct": "Hexane"
+  }
+]
